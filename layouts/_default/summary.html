@@ -1,8 +1,8 @@
 <div class="summary">
   {{ if .Params.image }}
-  <span style="font-size: 64px;">
-    <i class="{{ .Params.image }}"></i>
-  </span>
+  <div class="service-image">
+    <span style="font-size: 80px;"><i class="{{ .Params.icon }}" title="{{ .Title }}" alt="{{ .Title }}"></i></span>
+  </div>
   {{ end}}
   <h2>{{ .Title }}</h2>
   {{ .Content | truncate 100 }}
