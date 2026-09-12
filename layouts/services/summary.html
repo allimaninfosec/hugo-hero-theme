@@ -1,12 +1,12 @@
 <div class="service service-summary">
   {{ if .Params.icon }}
   <div class="service-image">
-    <img height="80" width="80" src="{{ .Params.icon | relURL }}" alt="{{ .Title }}" />
+    <span style="font-size: 80px;"><i class="{{ .Params.icon }}" title="{{ .Title }}" alt="{{ .Title }}"></i></span>
   </div>
   {{ end }}
   <div class="service-content">
     <h2 class="service-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      {{ .Title }}
     </h2>
     {{ .Content | truncate 120 "..." }}
   </div>
